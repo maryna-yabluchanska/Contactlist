@@ -1,5 +1,10 @@
+body {
+  background: #282c34;
+  color: aliceblue;
+}
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -35,4 +40,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul{
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 0;
+  overflow: hidden;
+}
+li{
+  list-style: none;
+  background: slategrey;
+  border-radius: 8px;
+}
+
+input{
+  max-width: 500px;
+  min-width: 400px;
+  padding: 10px;
+  color: aliceblue;
+  border: none;
+  outline: none;
+  background: slategrey;
+  border-radius: 8px;
+  font-size:20px ;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: aliceblue;
 }
