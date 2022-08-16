@@ -2,19 +2,16 @@ import data from "../mock-data.json"
 
 function ContactList(props) {
     const filteredData = data.filter((el) => {
-        //if no input the return the original
         if (props.input === '') {
             return el;
         }
-        //return the item which contains the user input
-        // else {
-        //     return el.text.toLowerCase().includes(props.input)
-        // }
+        else {
+            return el.name.toLowerCase().includes(props.input)
+        }
     })
     return (
         <ul>
-            {filteredData}
-            {data.map((person) => (
+            {filteredData.map((person) => (
                 <li key={person.name}>
                     <p><strong>{person.name} </strong></p>
                     <p>Phone: {person.phone}</p>
