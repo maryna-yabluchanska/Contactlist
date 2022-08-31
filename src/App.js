@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import './App.css';
-import ContactList from "./components/ContactList";
+import ContactList from "./components/ContactList2";
 
 function App() {
     const [inputText, setInputText] = useState("");
@@ -8,12 +8,11 @@ function App() {
         var lowerCase = e.target.value.toLowerCase();
         setInputText(lowerCase);
     };
-  return (
+     return (
     <div className="App">
       <main>
           <h1>Search by name:</h1>
           <input type="search" placeholder="Search" onChange={handleChange}/>
-          <p>{inputText}</p>
           <div>
               <h1>Contacts:</h1>
               <ContactList input={inputText}/>
